@@ -1,0 +1,12 @@
+@use "reset";
+
+main {
+    padding: 1rem;
+    max-width: min(85ch, 100vw - 1rem);
+    margin-inline: auto;
+    background-color: lightcoral;
+}
+
+body {
+    background-color: grey;
+}
