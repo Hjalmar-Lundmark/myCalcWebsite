@@ -115,13 +115,73 @@ select {
 }
 main {
   padding: 1rem;
-  max-width: min(85ch, 100vw - 1rem);
+  width: min(85ch, 100vw - 1rem);
   margin-inline: auto;
   background-color: lightcoral;
 }
 
 body {
   background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: min(85ch, 100vw - 1rem);
+  margin-inline: auto;
+}
+
+.navbar {
+  width: 100%;
+  background-color: lightskyblue;
+}
+.navbar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4rem;
+  max-width: min(85ch, 100vw - 1rem);
+  margin-inline: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.navbar__button {
+  background-color: transparent;
+}
+@media (min-width: 600px) {
+  .navbar__button {
+    display: none;
+  }
+}
+@media (max-width: 599px) {
+  .navbar__collapse {
+    display: none;
+  }
+}
+.navbar__collapse > ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.navbar__collapse--show {
+  display: block;
+  width: 100%;
+}
+.navbar__collapse--show > ul {
+  flex-direction: column;
+  padding: 0;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+footer > * > p > a {
+  color: lightblue;
 }
 
 /*# sourceMappingURL=style.css.map */
