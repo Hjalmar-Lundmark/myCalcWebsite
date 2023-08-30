@@ -147,6 +147,9 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.navbar__inner--open {
+  padding-top: 0.5rem;
+}
 .navbar__button {
   background-color: transparent;
 }
