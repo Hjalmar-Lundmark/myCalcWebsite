@@ -1,8 +1,8 @@
 {
-  "name": "template-node",
-  "description": "idk, just thought I would create a template.",
+  "name": "mycalcwebsite",
+  "description": "Hemsida för att samla funktioner till vardagen",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "dev": "nodemon -e njk,js app.js & npm run scss",
     "start": "node app.js",
