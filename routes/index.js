@@ -13,4 +13,11 @@ router.get('/mock', async function(req, res, next) {
     })
 })
 
+router.post('/mock', async function (req, res, next) {
+    const { inText } = req.body;
+    console.log(inText);
+
+    res.redirect('/mock');
+})
+
 module.exports = router;

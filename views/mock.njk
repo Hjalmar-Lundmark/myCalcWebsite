@@ -9,10 +9,16 @@
 </p>
 
 <form action="/mock" method="post">
-    <label for="in">In: </label>
-    <textarea name="in" id="in" cols="30" rows="10"></textarea>
-    <label for="out">Out: </label>
-    <input type="text" name="out" id="out">
+    <label for="inText">In: </label>
+    <textarea name="inText" id="inText" cols="30" rows="10"></textarea>
+    <button type="submit">Skicka</button>
 </form>
+
+{% if mockOut %}
+<div class="mockOut">
+    <p>{{ outMock }}</p>
+    <button>Copy</button>
+</div>
+{% endif %}
 
 {% endblock %}
