@@ -9,7 +9,7 @@ router.get('/', async function(req, res, next) {
 
 router.get('/mock', async function(req, res, next) {
     res.render('mock.njk', {
-        title: "mOcKiNg TeXt"
+        title: "Hjalmars text konverter"
     })
 })
 

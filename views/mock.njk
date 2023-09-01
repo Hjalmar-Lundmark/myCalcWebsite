@@ -14,11 +14,14 @@
     <button type="submit">Skicka</button>
 </form>
 
-{% if mockOut %}
+
 <div class="mockOut">
+    {% if mockOut %}
     <p>{{ outMock }}</p>
+    {% else %}
+    <label for="">Out:</label>
+    {% endif %}
     <button>Copy</button>
 </div>
-{% endif %}
 
 {% endblock %}
